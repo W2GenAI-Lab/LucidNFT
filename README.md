@@ -7,10 +7,6 @@
 ---
 ## 📰 News & Updates
 
-**[2026.03]** - Released the LucidNFT project page and arXiv preprint.
-
-**[2026.03]** - Added a GitHub-friendly README with method figures, gallery examples, and benchmark summaries.
-
 ---
 ## 👥 Authors
 
@@ -97,10 +93,10 @@ According to the project page, LucidNFT improves the perceptual-faithfulness tra
 
 ### 📈 Quantitative Results
 
-Higher is better for all metrics except NIQE. The current README uses a single combined figure for stable GitHub rendering; you can replace `images/fig/quantitative_results_full.png` later with your final version.
+Quantitative comparison with state-of-the-art Real-ISR methods on RealLQ250, DRealSR, and RealSR. Higher is better for all metrics except NIQE. Values in parentheses denote improvements over the corresponding backbone baseline.
 
 <div align="center">
-<img alt="LucidNFT quantitative results" src="images/fig/quantitative_results_full.png" width="1100" />
+<img alt="LucidNFT quantitative results" src="images/fig/quantitative_results.png" width="1100" />
 </div>
 
 <div align="center">
@@ -117,7 +113,7 @@ Higher is better for all metrics except NIQE. The current README uses a single c
 
 <table>
 <tr align="center">
-  <td width="240"><b>LQ</b></td>
+  <td width="240"><b>LR</b></td>
   <td width="240"><b>LucidFlux</b></td>
   <td width="240"><b>LucidFlux + LucidNFT</b></td>
 </tr>
@@ -166,7 +162,8 @@ pip install -r requirements.txt
 Run the downloader to populate `weights/` with the required assets, including the FLUX base model, SwinIR, LucidFlux checkpoint, prompt embeddings, LucidNFT LoRA, UltraFlux VAE, and SigLIP:
 
 ```bash
-bash down.sh
+python -m tools.hf_login --token "$HF_TOKEN"
+python -m tools.download_weights --dest weights
 ```
 
 This script also generates `weights/env.sh`. Source it before inference so the FLUX base paths are exported correctly:
@@ -182,7 +179,7 @@ Run the LucidFlux baseline:
 ```bash
 python inference.py \
   --checkpoint weights/lucidflux/lucidflux.pth \
-  --control_image /path/to/lq_image_or_dir \
+  --control_image /path/to/lr_image_or_dir \
   --output_dir outputs \
   --width 1024 \
   --height 1024 \
@@ -197,7 +194,7 @@ Run LucidFlux + LucidNFT LoRA:
 ```bash
 python inference.py \
   --checkpoint weights/lucidflux/lucidflux.pth \
-  --control_image /path/to/lq_image_or_dir \
+  --control_image /path/to/lr_image_or_dir \
   --output_dir outputs-lora \
   --width 1024 \
   --height 1024 \
@@ -232,12 +229,6 @@ python test_LucidConsistency.py \
   --hr /path/to/hr_benchmark
 ```
 
-You can also use the provided wrapper:
-
-```bash
-bash test_LucidConsistency.sh
-```
-
 ## Citation
 
 ```bibtex
@@ -257,4 +248,5 @@ This repository is released under the license specified in [LICENSE](LICENSE).
 
 - [LucidFlux](https://github.com/W2GenAI-Lab/LucidFlux)
 - [FLUX](https://github.com/black-forest-labs/flux)
-- [Qwen3-VL](https://github.com/QwenLM/Qwen2.5-VL)
+- [DiffusionNFT](https://github.com/NVlabs/DiffusionNFT)
+- [Qwen3-VL-Embedding](https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B)
