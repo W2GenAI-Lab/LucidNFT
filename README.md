@@ -1,11 +1,14 @@
 <div align="center">
 <h1>LucidNFT:<br/>LR-Anchored Multi-Reward Preference Optimization for Generative Real-World Super-Resolution</h1>
 
-### [**🌐 Project Page**](https://w2genai-lab.github.io/LucidNFT/) | [**📘 arXiv**](https://arxiv.org/pdf/2603.05947) | [**🧱 LucidFlux Backbone**](https://github.com/W2GenAI-Lab/LucidNFT)
+### [**🌐 Website**](https://w2genai-lab.github.io/LucidNFT/) | [**📘 Arxiv**](https://arxiv.org/pdf/2603.05947) | [**🤗 Models**](https://huggingface.co/W2GenAI/LucidNFT)
 </div>
 
 ---
 ## 📰 News & Updates
+
+**[2026.03.26]** — Thanks to [smthemex](https://github.com/smthemex) for developing [ComfyUI_LucidNFT](https://github.com/smthemex/ComfyUI_LucidNFT). 
+
 
 ---
 ## 👥 Authors
