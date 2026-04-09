@@ -22,6 +22,20 @@
 
 ---
 
+<details open><summary>💡 We also have other projects on 4K text-to-image generation and photo-realistic image estoration that may interest you. ✨</summary><p>
+
+> [**[CVPR 2026 Highlight] UltraFlux: Data-Model Co-Design for High-quality Native 4K Text-to-Image Generation across Diverse Aspect Ratios**](https://arxiv.org/pdf/2509.22414) <br>
+> [**Tian Ye**](https://owen718.github.io/)<sup>1</sup>\*‡, [**Song Fei**](https://feisong123.github.io)<sup>1</sup>\*, [**Lei Zhu**](https://sites.google.com/site/indexlzhu/home)<sup>1,2</sup>† <br>
+> [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/W2GenAI-Lab/UltraFlux) [![github](https://img.shields.io/github/stars/W2GenAI-Lab/UltraFlux.svg?style=social)](https://github.com/W2GenAI-Lab/UltraFlux) [![arXiv](https://img.shields.io/badge/arXiv-2509.22414-red)](https://arxiv.org/pdf/2509.22414) [![Project Page](https://img.shields.io/badge/Project%20Page-Visit-blue)](https://w2genai-lab.github.io/UltraFlux/) [![Hugging Face Space](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/Owen777/UltraFlux-v1) <br>
+
+> [**[ICLR 2026] LucidFlux: Caption-Free Photo-Realistic Image Restoration via a Large-Scale Diffusion Transformer**](https://arxiv.org/pdf/2509.22414) <br>
+> [**Song Fei**](https://feisong123.github.io)<sup>1</sup>\*, [**Tian Ye**](https://owen718.github.io/)<sup>1</sup>\*‡, [**Lujia Wang**](https://scholar.google.com/citations?user=c2_syKsAAAAJ)<sup>1</sup> , [**Lei Zhu**](https://sites.google.com/site/indexlzhu/home)<sup>1,2</sup>†</sup> <br>
+> [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/W2GenAI-Lab/LucidFlux) [![github](https://img.shields.io/github/stars/W2GenAI-Lab/LucidFlux.svg?style=social)](https://github.com/W2GenAI-Lab/LucidFlux) [![arXiv](https://img.shields.io/badge/arXiv-2509.22414-red)](https://arxiv.org/pdf/2509.22414) [![Project Page](https://img.shields.io/badge/Project%20Page-Visit-blue)](https://w2genai-lab.github.io/LucidFlux/) [![Hugging Face Space](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/W2GenAI/LucidFlux) <br>
+
+</p></details>
+
+---
+
 ## 🌟 What is LucidNFT?
 
 **LucidNFT** is a multi-reward preference optimization framework for **flow-matching real-world image super-resolution**. Built on top of **LucidFlux**, it improves perceptual quality while preserving **LR-anchored faithfulness** under diverse real-world degradations.
